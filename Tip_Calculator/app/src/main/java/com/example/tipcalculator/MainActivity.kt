@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding.calculateButton.setOnClickListener{calculateTip()}
     }
     private fun calculateTip() {
-        val stringInTextField = binding.costOfService.text.toString()
+        val stringInTextField = binding.costOfServiceEditText.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
         if(cost == null){
             Toast.makeText(this,"Enter the Cost of Service first.", Toast.LENGTH_SHORT).show()
